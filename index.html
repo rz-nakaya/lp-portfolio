@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>移転しました | PORTFOLIO</title>
+<script>
+  // 旧URL(/lp-portfolio/...)を新URL(/portfolio/...)へ転送する。ページの位置・クエリ・アンカーは引き継ぐ
+  (function () {
+    var oldBase = '/lp-portfolio/';
+    var newBase = '/portfolio/';
+    var path = location.pathname;
+    var rest = path.indexOf(oldBase) === 0 ? path.slice(oldBase.length) : '';
+    location.replace(newBase + rest + location.search + location.hash);
+  })();
+</script>
+<meta http-equiv="refresh" content="0; url=https://rz-nakaya.github.io/portfolio/">
+<link rel="canonical" href="https://rz-nakaya.github.io/portfolio/">
+</head>
+<body>
+  <main style="max-width:640px;margin:80px auto;padding:0 16px;text-align:center;font-family:sans-serif;">
+    <h1>ポートフォリオは移転しました</h1>
+    <p>新しいURL: <a href="https://rz-nakaya.github.io/portfolio/">https://rz-nakaya.github.io/portfolio/</a></p>
+  </main>
+</body>
+</html>
